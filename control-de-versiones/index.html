@@ -46,6 +46,31 @@
             texto</button>
     </section>
 
+    <section id="atributos">
+        <h2>Modificar Atributos HTML</h2>
+        <p>JavaScript puede cambiar los valores de los atributos HTML.</p>
+        <button
+            onclick="document.getElementById('miImagen').src='https://www.w3schools.com/js/pic_bulbon.gif'">Encender</button>
+        <img id="miImagen" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:100px">
+        <button
+            onclick="document.getElementById('miImagen').src='https://www.w3schools.com/js/pic_bulboff.gif'">Apagar</button>
+    </section>
+
+    <section id="estilos">
+        <h2>Modificar estilos CSS</h2>
+        <p id="demoStyle">JavaScript puede cambiar el estilo de un elemento HTML.</p>
+        <button type="button" onclick="cambiarEstilo()">Cambiar estilo</button>
+
+        <script>
+            // Función para cambiar el tamaño de fuente y color del texto
+            function cambiarEstilo() {
+                var elem = document.getElementById("demoStyle");
+                elem.style.fontSize = "25px"; // Cambia el tamaño de letra
+                elem.style.color = "red";       // Cambia el color a rojo
+            }
+        </script>
+    </section>
+
     <footer>
         <p>&copy; 2026 - Formación Web para Empresas</p>
     </footer>
