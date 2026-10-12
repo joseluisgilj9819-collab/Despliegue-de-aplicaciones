@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Curso JS y HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+
+        header,
+        nav,
+        footer {
+            background: #f4f4f4;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        section {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Curso de JavaScript e Interacción HTML</h1>
+    </header>
+    <nav><a href="#home">Home</a></nav>
+
+    <section id="home">
+        <h2>Descripción del Curso</h2>
+        <p>Aprende a manipular el DOM con JavaScript interactivo de forma sencilla.</p>
+    </section>
+
+    <section id="contenido">
+        <h2>Modificar contenido HTML</h2>
+        <p id="demo">JavaScript puede cambiar el contenido HTML.</p>
+        <button type="button" onclick='document.getElementById("demo").innerHTML = "¡Hola JavaScript!"'>Cambiar
+            texto</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 - Formación Web para Empresas</p>
+    </footer>
+</body>
+
+</html>
