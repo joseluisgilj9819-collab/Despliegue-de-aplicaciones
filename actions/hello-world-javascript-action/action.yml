@@ -1,0 +1,13 @@
+name: 'Hello World JavaScript Action'
+description: 'Saluda a alguien y muestra un mensaje personalizado'
+inputs:
+  who-to-greet:
+    description: '¿A quién quieres saludar?'
+    required: true
+    default: 'Mundo'
+outputs:
+  time:
+    description: 'La hora en la que se ejecutó el saludo'
+runs:
+  using: 'node20' # Versión de Node.js recomendada para GitHub Actions
+  main: 'dist/index.js' # Apuntará al archivo compilado
